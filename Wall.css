@@ -1,0 +1,17 @@
+.button {
+    cursor: hand;
+    background-color: #ff8d35;
+    color: white;
+    font-weight: 900;
+    /* font-size: 1.2rem; */
+    border: none;
+    padding: 1em 3em;
+    margin: 2em auto;
+    display: block;
+
+    transition: background .5s ease-in, transform .5s .25s ease-in-out;
+}
+.button:hover {
+    background: #c61140;
+    transform: scale(1.2);
+}

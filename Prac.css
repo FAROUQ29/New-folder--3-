@@ -1,0 +1,18 @@
+.pimg1 {
+    background-image: url(../FAROUQ/Programming\ Stuff/gettyimages-1215119911-612x612.jpg);
+    min-height: 100;
+}
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+.ptext .border {
+    background-color: #111;
+    color: #ffff;
+    padding: 20px;
+}

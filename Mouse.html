@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+    <link rel="stylesheet" href="Mouse.css">
+    <link rel="stylesheet" href="Mouse1.css">
+</head>
+<body>
+    <a class="skip-link screen-reader-text" href="content">Skip to content</a>
+    <header class="masthead clear">
+        <div class="centered">
+            <div class="site-branding">
+                <h1 class="site-title">Flex box demo : menus</h1>
+            </div>  <!-- site-title -->
+        </div>   <!--Centered-->
+    </header>    <!-- Masthead -->
+
+    <main class="main-area">
+        <div class="centered">
+            <section class="menu-section">
+<h2 class="menu-heading">Single level Menu</h2>
+<div class="color">
+                <nav id="single-nav" class="single-nav menu" role="navigation">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact </a></li>
+                    </ul>
+                </nav>  <!-- #single-nav .single-nav -->
+                </div>
+                    
+                 
+            </section>      <!-- Menu-selection -->
+            <section class="menu-selection">
+                <h2 class="menu-heading">Advanced Menu</h2>
+                <div class="color">
+                     <nav id="advanced-nav" class="advanced-nav menu" role="navigation">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <div class="button-text">
+                                    Home
+                                    <span>is where the heart is</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa fa-cutlery"></i>
+                                </div>
+                                <div class="button-text">
+                                    Food
+                                    <span>is nourishment for the soul</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa fa-file-text"></i>
+                                </div>
+                                <div class="button-text">
+                                    Recipes
+                                    <span>guide you on your journey</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa fa-paper-plane"></i>
+                                </div>
+                                <div class="button-text">
+                                    News
+                                    <span>brings new things</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>   <!-- #advanced-nav .advanced-nav -->
+                </div>
+               
+            </section>   <!-- .menu-section -->
+            <section class="menu-section">
+                <h2 class="menu-heading">MUlti-level (Drop Down) Menu</h2>
+                <nav id="multi-level-nav" class="multi-level-nav menu" role="navigation"></nav>
+                <ul>
+                    <li ><a href="#">Home</a></li>
+                    <li class="sub-menu">
+                        <li><a href="#">Chef for hire</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Resturant</a></li>
+                    </li>
+                    <li class="has-children">
+                        <a href="#">Classes<button class="dropdown-toggle" aria-expanded="false"></button></a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

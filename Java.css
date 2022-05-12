@@ -1,0 +1,19 @@
+.container {
+    width: 500px;
+}
+.input {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+span {
+    display: block;
+    margin-top: 20px;
+}
+.title {
+    font-size: 18px;
+}
+.target {
+    font-size: 25px;
+}

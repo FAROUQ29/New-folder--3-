@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall</title>
+    <link rel="stylesheet" href="Wall.css">
+</head>
+<body>
+    <h1>Employee Interests Survey Form</h1>
+    <h3>Enter your name :
+        <input type="text" name="username" size="35" maxlength="35" value=""> <br>
+    </h3>
+    <h1>Enter your department :</h1>
+    <input type="text" name="Deptt" size="35" maxlength="35" value="">
+    <h1>Tell us a little about yourself :</h1>
+    <textarea name="comments" cols="30" rows="4"></textarea><br>
+    <h1>Do you exercise at home ?</h1>
+    <input type="radio" name="ex" value="2"><p>No</p>
+    <p>How do you like to read about your favorite topics ?</p>
+    <p>
+        <input type="checkbox" name="books">Books
+        <input type="checkbox" name="web">Online
+        <input type="checkbox" name="magazines">magazines
+    </p>
+    <h1>What genre of movies do you like ?</h1>
+    <select name="moviepref"><option> 
+        <option value="1" selected = "true">Comedy</option>
+        <option value="2"> Romance</option>
+        <option value="3">Thriller</option>
+        <option value="4">Horror</option>
+        <option value="5">Biopicc</option>
+        <option value="6">Drama</option>
+        <option value="7">Action</option>
+        <option value="8">Adventure</option>
+        <option value="9">Animation</option>
+    </select>
+    <br>
+    <input type="submit" value="submit form">
+    <br>
+<label>Time field:</label><input type="time" value="09:29" step="3600"><br>
+<label>Date field:</label><input type="date" value="2002-W11"><br>
+<button class="button">Submit</button>
+</body>
+</html> 

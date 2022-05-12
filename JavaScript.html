@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaff</title>
+    <link rel="stylesheet" href="JavaScript.css">
+</head>
+
+<body>
+    <label for="txt-q-power">Vote for either Jibola or Farouq <br><b>N.B:Each candidate have the maximum vote of 29</b></label>
+    <br>
+    <input type="number" class="num" min="0" max="29" id="txt-q-power">
+    <br>
+    <input type="radio" class="jib" value="Jibola" name="r_method" id="r-method-pickup">
+    <label for="r-method-pickup">Jibola </label>
+    <br>
+    <input type="radio" class="far" value="Faruq" name="r_method" id="r-method-pickup">
+    <label for="r-method-pickup">Faruq </label>
+    <br>
+    <button id="sub">Submit</button>
+    <p class="vote"></p>
+    <p class="shop"></p>
+    <p class="nope"></p>
+    <h1>My First JavaScript</h1>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML=Date()">
+Click here to display Date and Time.</button> 
+<p id="demo"></p>
+
+    <script>
+        var faruq = document.querySelector(".vote");
+        var jibola = document.querySelector(".shop");
+        var nope = document.querySelector(".nope");
+        var jib = document.querySelector(".jib");
+        var far = document.querySelector(".far");
+        var submit = document.querySelector("#sub");
+        var input = document.querySelector(".num");
+        var val = input.value;
+
+        submit.addEventListener("click", function () {
+           if (jib.checked) {
+               jibola.innerHTML = `Jibola has ${input.value} number of vote(s)`
+           } else if(far.checked) {
+            faruq.innerHTML = `Faruq has ${input.value} number of vote(s)`
+               
+           } else{
+            nope.innerHTML = `No vote  yet`
+
+           }
+           
+        })
+
+    </script>
+    
+    <!-- <p id="demo">JavaScript can hide HTML elements.</p>
+    <button type="button"
+     onclick="document.getElementById('demo').style.display='none'">Click Here!</button> -->
+
+<!-- <p>Don't click the button below</p>
+<p id="demo" style="display:none">Why did you click ?</p>
+<button type="button"
+onclick="document.getElementById('demo').style.display='block'">Don't click</button>
+ -->
+
+ <!-- <body onload="startTime()">
+<h2>JavaScript Clock</h2>
+<div id="txt"></div>
+<script>
+    function startTime() {
+        const today = new Date ();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML= h + ":" m + ":" + s;
+        setTimeout(startTime, 1000);
+    }
+    function checkTime(i) {
+        if (i<10) {i="0" + i}; // add zero in front of numbers <10
+        return i;
+    }
+</script>
+</body> -->
+
+
+<main>
+    <div class="container">
+        <h1>Counter</h1>
+        <span id="value">0</span>
+        <div class="button container">
+            <button class="btn decrease">Decrease</button>
+            <button class="btn reset">Reset</button>
+            <button class="btn increase">Increase</button>
+            
+        </div>
+    </div>
+</main>
+
+
+<p>Click the button to create a Number field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "number");
+  x.setAttribute("value", "12345");
+  document.body.appendChild(x);
+}
+</script>
+
+
+<script>
+    var answer = window.prompt("Type YES, NO, or MAYBE. Then click OK.")
+if (answer === "YES") {
+console.log("You said YES!");
+} else if (answer === "NO") {
+console.log("You said No. :(");
+} else {
+console.log("Are you mad or something!");
+}
+</script>
+
+</body>
+</html>

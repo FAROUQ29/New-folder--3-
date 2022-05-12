@@ -1,0 +1,35 @@
+body {
+    background-image: url(../FAROUQ/Programming\ Stuff/background.png);
+    background-size: cover;
+    background-position: 0px -250px;
+}
+
+.wrapper {
+    margin: 20em auto 2em auto;
+    width: 80%;
+    position: relative;
+}
+
+.robot {
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.41,.07,.62,.91);
+    animation-iteration-count: 4;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes slide {
+     from {transform: translateX(0);}
+     to {transform: translateX(900px);}  
+
+    /* 0% {transform: translateX(0);}
+    20% {transform: translateX(200px);}
+    35% {transform: translateX(0);}
+    90% {transform: translateX(980px);}
+    90% {transform: translateX(900px);} */
+}
+.fb {margin: 4em 10%; background: #493f5b;}
+
+
