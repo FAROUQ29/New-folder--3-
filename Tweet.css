@@ -42,4 +42,7 @@ img {
 
 .flex-child:first-child {
     margin-right: 20px;
-} 
+}
+a {
+    text-decoration: none;
+}
